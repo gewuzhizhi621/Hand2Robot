@@ -42,20 +42,29 @@ A lightweight vision-based human hand keypoint detection, robot hand pose mappin
 
 ##  效果展示
 
-> 建议将运行截图放到 `docs/images/` 目录下。  
-> 如果暂时还没有截图，可以先保留下面的图片引用，后续补图即可。
-
-### GUI 实时检测界面
-
-![GUI Camera Demo](docs/images/gui_camera.png)
-
-### 机器人手可视化
-
-![Robot Hand Visualization](docs/images/robot_hand.png)
-
 ### 运行演示 GIF
 
+下图展示了系统从手部输入到关键点检测、姿态映射与机器人手可视化的整体效果：
+
 ![Demo](docs/demo.gif)
+
+### GUI 主界面（摄像头模式）
+
+下图为系统在 **摄像头模式** 下的运行界面。左侧为输入控制区域，中间为手部画面与 21 个关键点检测结果，右侧为机器人手实时可视化结果，下方显示 finger angles、qpos 和日志信息。
+
+![GUI Camera](docs/images/gui_camera.png)
+
+### GUI 主界面（待机状态）
+
+下图为系统启动后的 **待机界面**。用户可以在同一窗口中选择摄像头、照片或视频三种输入方式，并切换仿真视角、姿态平滑、坐标轴与手指名称显示等选项。
+
+![GUI Idle](docs/images/gui_idle.png)
+
+### GUI 主界面（视频模式）
+
+下图为系统在 **视频模式** 下的运行界面。系统支持视频逐帧处理与播放，同时实时显示手部关键点检测结果和机器人手姿态可视化，并支持暂停、停止和结果导出。
+
+![GUI Video](docs/images/gui_video.png)
 
 ---
 
@@ -111,17 +120,6 @@ Hand2Robot/
 
 ---
 
-##  环境要求
-
-| 项目 | 推荐配置 |
-|---|---|
-| 操作系统 | Windows 10 / Windows 11 |
-| Python | Python 3.10 |
-| 环境管理 | Anaconda / Miniconda |
-| 摄像头 | 普通 USB 摄像头或笔记本内置摄像头 |
-| GPU | 非必须，CPU 即可运行 |
-
----
 
 ##  安装方法
 
